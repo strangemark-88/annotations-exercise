@@ -1,4 +1,8 @@
 public class Main {
+
+//    @SuppressWarnings("deprecation") could have just suppressed warning
+
+
     public static void main(String[] args) {
         Author author = new Author("Sandi", "Metz");
 
