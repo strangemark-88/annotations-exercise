@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Author extends Person {
-    private List<String> books;
+    private ArrayList<String> books;
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
@@ -20,7 +20,7 @@ public class Author extends Person {
         return books;
     }
 
-    public List<String> publishedBooks() {
+    public ArrayList<String> publishedBooks() {
         return books;
     }
 
@@ -28,8 +28,8 @@ public class Author extends Person {
         books.add(book);
     }
 
-    //    @Override
-    public String sortName() {
+        @Override
+    public String fullName() {
         return String.format("%s, %s", lastName, firstName);
     }
 }
